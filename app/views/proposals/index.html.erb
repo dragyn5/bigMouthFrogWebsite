@@ -1,0 +1,37 @@
+
+<h1>Listing articles</h1>
+ 
+
+      <table>
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Company</th>
+              <th>Website Url</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>City/State/Zip</th>
+              <th>Goals</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        <% @proposals.each do |proposal| %>
+          <tr>
+            <td><%= link_to proposal.name, proposal_path(proposal) %></td>
+            <td><%= proposal.company %></td>
+            <td><%= proposal.website_url %></td>
+            <td><%= proposal.phone %></td>
+            <td><%= proposal.email %></td>
+            <td><%= proposal.address %></td>
+            <td><%= proposal.city %><%= proposal.state %><%= proposal.zip %></td>
+            <td><%= proposal.website_goals %></td>
+            <td><%= link_to 'Edit', edit_proposal_path(proposal) %></td>
+            <td><%= link_to 'Destroy', proposal_path(proposal),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>

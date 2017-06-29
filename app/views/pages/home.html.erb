@@ -1,0 +1,80 @@
+<ul id="dropdown1" class="dropdown-content">
+  <li>
+    <% if user_signed_in? %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    <% else %> 
+      <a href="/users/sign_in">Login</a>
+    <% end %>
+  </li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper" style="position: top;">
+    <a href="#!" class="brand-logo">Logo</a>
+    <ul class="right hide-on-med-and-down" style="max-height: 5em;">
+      <li><a class="circle pulse"><img class="circle pulse" width="65" src="/Users/nygard/Desktop/froglogoside"></a></li>
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="/proposals/new">New Proposal</a></li>
+      <li><a href="/proposals">Proposals</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+        
+
+<div class="row">
+          <div class="col s4">  
+            <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://vignette2.wikia.nocookie.net/pikmin/images/4/4f/Lily_pad_stock_2_by_moonchilde_stock-d3g50nk.jpg/revision/latest?cb=20130804155443">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+    </div>
+        <div class="col s8">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Atelopus_zeteki1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+        
