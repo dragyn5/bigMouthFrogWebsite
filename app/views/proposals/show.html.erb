@@ -47,3 +47,12 @@
   <strong>Website Goals:</strong>
   <%= @proposal.website_goals %>
 </p>
+
+<h2>Add a History:</h2>
+<%= render 'histories/form' %>
+
+<h2>History</h2>
+<%= render @proposal.histories %>
+
+<%= link_to 'Edit', edit_proposal_path(@proposal) %> |
+<%= link_to 'Back', proposals_path %>

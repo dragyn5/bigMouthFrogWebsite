@@ -1,4 +1,6 @@
 class Proposal < ApplicationRecord
+  has_many :histories, dependent: :destroy
+
   validates :name, presence: true,
                     length: { minimum: 5 }
   validates :email, presence: true,

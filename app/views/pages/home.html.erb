@@ -17,7 +17,9 @@
       <li><a class="circle pulse"><img class="circle pulse" width="65" src="/Users/nygard/Desktop/froglogoside"></a></li>
       <li><a href="sass.html">Sass</a></li>
       <li><a href="/proposals/new">New Proposal</a></li>
-      <li><a href="/proposals">Proposals</a></li>
+        <% if user_signed_in? %>
+          <li><a href="/proposals">Proposals</a></li>
+        <% end %>
       <!-- Dropdown Trigger -->
       <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
     </ul>

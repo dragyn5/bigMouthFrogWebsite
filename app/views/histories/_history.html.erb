@@ -1,0 +1,9 @@
+<p>
+  <%= history.created_at %>
+  <strong>Note: </strong>
+  <%= history.note %>
+
+  <%= link_to 'Destroy History', [history.proposal, history],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

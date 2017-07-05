@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   get 'pages/home'
 
-  resources :proposals
+  resources :proposals do
+    resources :histories
+  end
 
   root to: 'pages#home'
 

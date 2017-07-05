@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contacted: false
+  note: MyString
+  portfolio: one
+
+two:
+  contacted: false
+  note: MyString
+  portfolio: two
