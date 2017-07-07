@@ -1,17 +1,18 @@
 <p>
-  <%= history.created_at.to_s.slice!(0..9) %>
-  <% if history.user.nil? %>
-    Anonymous
-  <% else %>
-    <%= history.user.user_name %>
+  
+  <% if @proposal.histories.count != 0 %>
+    <%= history.created_at.to_s.slice!(0..9) %>
+    <%= history.contacted %>
+      <% if history.user.nil? %>
+      <% else %>
+        <%= history.user.user_name %>
+        <strong>Note: </strong>
+        <%= history.note %>
+
+        <%= link_to 'Destroy History', [history.proposal, history],
+                     method: :delete,
+                     data: { confirm: 'Are you sure?' } %>
+      <% end %>
   <% end %>
-
-
-
-  <strong>Note: </strong>
-  <%= history.note %>
-
-  <%= link_to 'Destroy History', [history.proposal, history],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
 </p>
+
