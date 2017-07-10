@@ -17,6 +17,7 @@
         </thead>
 
         <tbody>
+            
         <% @proposals.each do |proposal| %>
           <tr>
             <td><%= link_to proposal.name, proposal_path(proposal) %></td>

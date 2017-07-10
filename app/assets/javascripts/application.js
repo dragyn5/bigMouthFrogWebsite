@@ -16,9 +16,3 @@
 //= require materialize/extras/nouislider
 //= require turbolinks
 //= require_tree .
-
-    $(document).ready(function(){
-      $('.carousel').carousel();
-      $('.carousel.carousel-slider').carousel({fullWidth: true});
-    });
-        
