@@ -45,6 +45,6 @@
   </p>
         
   <p>
-    <%= f.submit %>
+    <%= f.button "Submit", class: "btn", data: {disable_with: "<i class='fa fa-spinner fa-spin' aria-hidden='true'></i> Submitting"} %>
   </p>
 <% end %>

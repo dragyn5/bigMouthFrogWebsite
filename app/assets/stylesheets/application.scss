@@ -2,5 +2,7 @@
  @import "materialize/extras/nouislider";
 @import "materialize/components/color";
 @import "material_icons"; 
+@import "font-awesome";
+
 $primary-color: color("blue", "lighten-2") #42f4aa;
 $secondary-color: color("yellow", "base") !default;
